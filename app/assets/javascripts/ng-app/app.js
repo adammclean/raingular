@@ -1,5 +1,5 @@
 //inside the square brackets is the 'dependency injection'
-angular.module('rainApp', ['ui.router'])
+angular.module('rainApp', ['ui.router','templates'])
 
 .config(function($stateProvider, $urlRouterProvider){
     $urlRouterProvider.otherwise('/');
@@ -7,6 +7,7 @@ angular.module('rainApp', ['ui.router'])
     $stateProvider
         .state('home', {
             url: '/home',
-            template: '<h1>Hi...welcome home friends</h1>'
+            templateUrl: '<h1>Hi...welcome home friends</h1>'
         })
     })
+
