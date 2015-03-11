@@ -7,7 +7,7 @@ angular.module('rainApp', ['ui.router','templates'])
     $stateProvider
         .state('home', {
             url: '/home',
-            templateUrl: '<h1>Hi...welcome home friends</h1>'
+            templateUrl: 'home.html'
         })
     })
 
